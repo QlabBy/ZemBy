@@ -2,7 +2,7 @@ Start project ZemBy
 
 1. Clone the repository 
 
-$ git clone https://github.com/AndrewDisin/test-project-susy.git
+$ git clone https://github.com/QlabBy/ZemBy.git
 
 2. Install Node dependencies 
 
