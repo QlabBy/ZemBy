@@ -15,3 +15,5 @@ $ bower install
 4. Run gulp
 
 $ gulp
+
+It's all !!!
