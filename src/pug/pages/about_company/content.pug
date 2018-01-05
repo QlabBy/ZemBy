@@ -1,0 +1,139 @@
++b.tabs-container
+    .container
+        +b.UL.tabs
+            +e.LI.item._active
+                +e.A.link О компании
+            +e.LI.item
+                +e.A.link Отзывы клиентов
+            +e.LI.item
+                +e.A.link Контакты
+            +e.LI.item
+                +e.A.link Реквизиты
+
+    +b.tabs-content._active
+        .container
+            +e.H1.title О компании
+            +e.P.text Мы – группа профессионалов с многолетним стажем в сфере землеустройства, юриспруденции, геодезии.
+            +e.P.text К примеру, руководитель нашего проекта, Маневич Виктор Михайлович, имеет опыт работы в сфере земельных и имущественных отношений более 20 лет.
+            +e.P.text Занимал должности техника по инвентаризации в Несвижском БТИ, инженера – землеустроителя в РУП «Проектный институт Белгипрозем», консультанта в Государственном комитете по имуществу Республики Беларусь, заместителя директора по строительству в частной организации,  руководил землеустроительной службой Минского облисполкома, управлением в Комитете государственного контроля Республики Беларусь.
+            +e.P.text Геодезические изыскания и восстановление границ земельных участков у нас осуществляют аттестованные специалисты, присутствующие на данном рынке услуг 10 и более лет.
+            +e.P.text Для оказания помощи по правовым вопросам мы привлекаем специалистов, имеющих лицензии на право осуществления адвокатской деятельности либо на оказание юридических услуг.
+            +e.P.text._no-margin Это позволяет проводить консультации и помогать разрешать земельные вопросы любого уровня сложности с максимальным качеством.
+            +e.P.text Мы работаем как с гражданами, так и с юридическими лицами, индивидуальными предпринимателями.
+        +b.questions
+            .container
+                +e.H2.title Нужны ответы на вопросы?
+                +e.items
+                    +e.item
+                        +e.img(src="../../assets/img/general/questions__item1.png")
+                        +e.caption Задать вопрос
+                    +e.item
+                        +e.img(src="../../assets/img/general/questions__item2.png")
+                        +e.caption Заказать консультацию
+                    +e.item
+                        +e.img(src="../../assets/img/general/questions__item3.png")
+                        +e.caption Отправить документы для анализа
+                    +e.item
+                        +e.img(src="../../assets/img/general/questions__item4.png")
+                        +e.caption Оплатить услуги
+                +e.P.description Индивидуальный подход к каждому клиенту!
+                
+        +b.driving-directions
+            .container
+                +e.H2.title Схема проезда:
+                +e.map
+                    <iframe src="https://yandex.by/map-widget/v1/-/CBad6FaH3C" width="100%" height="100%" frameborder="0"></iframe>
+                    
+    +b.reviews.tabs-content
+        .container
+            +e.H2.h2-title Отзывы клиентов
+            +e.UL.list
+                +e.LI.item
+                    +e.P.info 
+                        +e.SPAN.name Сергей 
+                        +e.SPAN.date 14.05.2017 08:38
+                    +e.P.text В кампании получил бесплатную консультацию по наследственному вопросу, юристы центра смогли найти выход из совсем тупиковой ситуации, очень благодарен им за это
+                +e.LI.item
+                    +e.P.info 
+                        +e.SPAN.name Николай  
+                        +e.SPAN.date 15.09.2016 09:45
+                    +e.P.text Хочу выразить огромную благодарность юристу за юридическую помощь в решении сложного вопроса по возмещению ущерба от турфирмы, а также ее чуткому и небезразличному отношению к людям, которые попали в сложную ситуацию. Благодаря ее профессионализму по всем вопросам с которыми я обращался мне удалось провести переговоры с турфирмой в мою пользу. Буду рад и дальше пользоваться ее юридической помощью и поддержкой. С Уважением Владимир Чубаров
+                +e.LI.item
+                    +e.P.info 
+                        +e.SPAN.name Елена В.  
+                        +e.SPAN.date 02.01.2015 07:26
+                    +e.P.text Риелтор кинул на денги и на квартиру думала с ума сойду. консультация без платная, была у Кинтерая Александр Григорьевич, вобще полностью всё мне обьяснил что делать помог с заевлением в суд сейчас в суд пойдем. До этого на консультации была только денег требуют ничего толком не разьсняют а этого юриста мне просто бог послал не думала что бывают такие спецыалисты высшего класса. С ним я точно уверена что суд выиграем.
+                +e.LI.item
+                    +e.P.info 
+                        +e.SPAN.name Николай 
+                        +e.SPAN.date 15.09.2016 09:45
+                    +e.P.text Хочу выразить огромную благодарность юристу за юридическую помощь в решении сложного вопроса по возмещению ущерба от турфирмы, а также ее чуткому и небезразличному отношению к людям, которые попали в сложную ситуацию. Благодаря ее профессионализму по всем вопросам с которыми я обращался мне удалось провести переговоры с турфирмой в мою пользу. Буду рад и дальше пользоваться ее юридической помощью и поддержкой. С Уважением Владимир Чубаров    
+                
+            +b.UL.pagination
+                +e.LI.item
+                    +e.A.link(href="#") 1
+                +e.LI.item
+                    +e.A.link(href="#") 2
+                +e.LI.item
+                    +e.A.link(href="#") 3
+                +e.LI.item
+                    +e.A.link(href="#") 4
+                +e.LI.item
+                    +e.A.link(href="#") 5    
+                 
+        +b.reviews-add
+            .container
+                +e.H2.title Будем благодарны за ваши отзывы о нашей работе!
+                +e.FORM.reviews-form(action="#")
+                    +e.input-container
+                        +e.INPUT.name(type="text" placeholder="Имя*" required)
+                        +e.INPUT.phone(type="text" placeholder="Телефон*" required) 
+                    +e.TEXTAREA.text(placeholder="Текст*" required)
+                    +b.BUTTON.button._orange._big._form(type="submit") Отправить отзыв
+                    
+    +b.tabs-content.contact
+        .container.contact-container
+            +e.contact-information
+                +e.H2.contact-title Контакты
+                +e.H3.title-h3 Информация об организации
+                +e.phones 
+                    +e.phones-title Телефоны:
+                    +e.A.mts +375 29 50 30 652 (МТС)
+                    +e.A.velcom +375 44 790 60 08 (Vel)
+                +e.address
+                    +e.P.address-title Адрес:
+                    +e.P.city г.Минск,
+                    +e.P.street ул.Я.Чечота, д.21
+                +e.email-container    
+                    +e.P.email-title E-mail:
+                    +e.A.email-linc Label
+                    
+            +e.FORM.application(action="#")
+                +e.H3.h3-title Заполните заявку на получение консультации
+                +e.INPUT.name(placeholder="Имя")
+                +e.INPUT.phone(placeholder="Номер телефона*" required)
+                +e.INPUT.email(placeholder="E-mail")
+                +e.TEXTAREA.message(placeholder="Сообщение")
+                +b.BUTTON.button._orange._big._application(type="submit") Отправить заявку
+                +e.P.confidentiality Конфиденциальность гарантируем!
+                
+        +b.driving-directions
+            .container
+                +e.H2.title Схема проезда:
+                +e.map
+                    <iframe src="https://yandex.by/map-widget/v1/-/CBad6FaH3C" width="100%" height="100%" frameborder="0"></iframe>
+
+    +b.tabs-content.contact
+        .container.contact-container
+            +e.contact-information
+                +e.H2.contact-title Реквизиты компании
+
+            +e.FORM.application(action="#")
+                +e.H3.h3-title Заполните заявку на получение консультации
+                +e.INPUT.name(placeholder="Имя")
+                +e.INPUT.phone(placeholder="Номер телефона*" required)
+                +e.INPUT.email(placeholder="E-mail")
+                +e.TEXTAREA.message(placeholder="Сообщение")
+                +b.BUTTON.button._orange._big._application(type="submit")  Отправить заявку
+                +e.P.confidentiality Конфиденциальность гарантируем!
+                   

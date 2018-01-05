@@ -1,11 +1,11 @@
 .tabs
     display: flex
     flex-direction: row
-    align-items: center
     justify-content: space-between
     margin-bottom: 75px
     &__item
-        padding: 15px 25px
+        flex-basis: 25%
+        padding: 20px 25px 23px 25px
         margin-right: 40px
         color: white
         background-color: #adadad
@@ -25,13 +25,117 @@
             box-shadow: -2px 2px 0px 0px rgba(55,59,59,1), inset -3px -3px 10px 1px rgba(0,84,61,1), inset 3px 5px 5px -3px rgba(58,147,123,1)
     &__link
         color: white
-        font-size: 13px
+        font-size: 16px
         font-weight: 700
 
 .tabs-content
     display: none
     &_active
         display: block
+    &__container
+        display: flex
+        flex-direction: row
+        margin-bottom: 60px
+    &__information
+        width: 70%
+        padding: 20px 15px
+        margin-right: 37px
+        background-color: white
+        box-shadow: 0px 0px 11.83px 1.17px rgba(30, 36, 37, 0.38)
+    &__h2-title
+        text-align: center
+        font-size: 30px
+        color: #002132
+        margin-bottom: 30px
+    &__list
+        padding-left: 20px
+    &__item
+        list-style: disc
+        text-indent: 40px
+        font-size: 16px
+        line-height: 27px
+        color: #444444
+    &__application
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 30%
+        padding: 20px 50px
+        background-color: white
+        box-shadow: 0px 0px 11.83px 1.17px rgba(30, 36, 37, 0.38)
+    &__h3-title
+        text-align: center
+        font-size: 18px
+        color: #002a3f
+        font-weight: 700
+        margin-bottom: 15px
+    &__name
+        padding: 0px 10px
+        border: 1px solid #aeaeae
+        height: 26px
+        width: 100%
+        margin-bottom: 7px
+        &::-webkit-input-placeholder
+            text-align: center
+            font-size: 13px
+    &__phone
+        padding: 0px 10px
+        border: 1px solid #aeaeae
+        height: 26px
+        width: 100%
+        margin-bottom: 7px
+        &::-webkit-input-placeholder
+            text-align: center
+            font-size: 13px
+    &__email
+        padding: 0px 10px
+        border: 1px solid #aeaeae
+        height: 26px
+        width: 100%
+        margin-bottom: 7px
+        &::-webkit-input-placeholder
+            text-align: center
+            font-size: 13px
+    &__message
+        padding: 10px 10px
+        border: 1px solid #aeaeae
+        height: 105px
+        width: 100%
+        margin-bottom: 14px
+        &::-webkit-input-placeholder
+            padding-top: 35px
+            text-align: center
+            font-size: 13px
+    &__confidentiality
+        font-size: 11px
+        font-weight: 700
+        color: #363636
+        text-align: center
+    &__text
+        text-indent: 45px
+        font-size: 16px
+        color: #444444
+        line-height: 27px
+        &:nth-last-child(2)
+            margin-bottom: 60px
+        &_no-margin
+            margin-bottom: 0 !important
+        &_bold
+            text-align: center
+            color: #002a3f
+            font-weight: 700
+            font-size: 22px
+            margin-bottom: 30px
+    &__title
+        color: #002a3f
+        text-align: center
+        font-size: 40px
+        margin-bottom: 45px
+        
+.button_application
+    width: 100%
+    border: none
+    margin-bottom: 18px
         
 .services-information
     margin-bottom: 60px
@@ -52,7 +156,7 @@
             font-weight: 700
         &:nth-last-child(2)
             margin-bottom: 60px
-    
+                    
 .details
     padding-bottom: 60px
     background: url("../../assets/img/general/background.jpg") no-repeat center bottom/cover
@@ -103,11 +207,14 @@
             text-align: center
             padding-top: 50px
             color: #999999
+    &_services
+        background: url("../../assets/img/general/background__services.jpg") no-repeat center top/cover
 
 .file
     display: none
     
 .button_form
+    align-self: center
     cursor: pointer
     text-align: center
     width: 295px
